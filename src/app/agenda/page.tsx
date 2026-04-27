@@ -89,10 +89,10 @@ export default function AgendaPage() {
                         </div>
                       </div>
                       <div className="flex flex-wrap items-center gap-3 md:flex-col md:items-end">
-                        <div className={`font-heading text-lg font-bold ${event.free ? "text-yellow" : "text-white"}`}>{event.price}</div>
+                        <div className="font-heading text-lg font-bold text-white">{event.price}</div>
                         {event.status && <span className="rounded-full border border-white/10 bg-dark-4 px-3 py-1 text-xs font-bold uppercase text-gray-1">{event.status}</span>}
-                        <Button variant={event.free ? "outline" : "sm"} href="/tickets">
-                          <i className={`fa ${event.free ? "fa-info-circle" : "fa-ticket"}`}></i> {event.free ? "Info" : "Tickets"}
+                        <Button variant="sm" href="/tickets">
+                          <i className="fa fa-ticket"></i> Tickets
                         </Button>
                       </div>
                     </article>
