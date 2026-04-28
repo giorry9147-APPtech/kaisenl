@@ -44,18 +44,6 @@ export function Hero() {
             </Button>
           </div>
 
-          <div className="fade-up grid max-w-[520px] grid-cols-3 gap-8">
-            {[
-              ["500+", "Events per jaar"],
-              ["25K+", "Foto's online"],
-              ["80K+", "Volgers"],
-            ].map(([number, label]) => (
-              <div key={label}>
-                <div className="mb-2 font-heading text-3xl font-bold text-yellow">{number}</div>
-                <div className="text-sm text-gray-1">{label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
@@ -63,18 +51,18 @@ export function Hero() {
         <div className="pointer-events-auto overflow-hidden rounded-md border border-white/10 bg-dark-2 shadow-2xl">
           <div className="relative h-44">
             <Image
-              src="/images/hero.jpg"
-              alt="Featured event"
+              src="/images/upcomingevent.jpeg"
+              alt="Welkomst Party Starzz from Surinam"
               fill
               sizes="288px"
               className="object-cover"
             />
           </div>
           <div className="p-4">
-            <div className="mb-2 text-xs font-semibold text-yellow">Hot - Uitverkocht</div>
-            <h3 className="mb-2 text-lg font-bold">Moef Gaga</h3>
+            <div className="mb-2 text-xs font-semibold text-yellow">Hot - Aankomend</div>
+            <h3 className="mb-2 text-lg font-bold">Welkomst Party Starzz from Surinam</h3>
             <div className="mb-4 text-xs text-gray-1">
-              <i className="fa fa-location-dot mr-1"></i> Zichtenburg - Den Haag
+              <i className="fa fa-location-dot mr-1"></i> Zichtenburg, Den Haag
             </div>
             <div className="flex gap-2">
               <span className="rounded-full bg-yellow px-3 py-1 text-xs font-bold text-black">13 Mei</span>
