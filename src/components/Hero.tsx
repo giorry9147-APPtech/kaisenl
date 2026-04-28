@@ -35,13 +35,21 @@ export function Hero() {
             Snapshots - Uitgaansagenda - Nieuws - Forum. De ultieme plek voor multiculturele events in Nederland.
           </p>
 
-          <div className="fade-up mb-12 flex flex-wrap gap-4">
+          <div className="fade-up mb-6 flex flex-wrap gap-4">
             <Button variant="primary" href="/agenda">
               <i className="fa fa-calendar"></i> Bekijk Agenda
             </Button>
             <Button variant="outline" href="/snapshots">
               <i className="fa fa-camera"></i> Snapshots
             </Button>
+          </div>
+
+          <div className="fade-up flex items-center justify-between rounded-md border border-white/10 bg-dark-2 p-3 md:hidden">
+            <div>
+              <div className="text-xs font-semibold text-yellow">13 Mei · Zichtenburg, Den Haag</div>
+              <div className="text-sm font-bold">Welkomst Party Starzz from Surinam</div>
+            </div>
+            <Button variant="sm" href="/agenda">Tickets</Button>
           </div>
 
         </div>
